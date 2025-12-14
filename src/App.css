@@ -713,12 +713,103 @@ h3 {
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 768px) {
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablet and Smaller Desktop (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    width: 95%;
+    padding: 0 30px;
+  }
+
   .hero-title {
-    font-size: 15vw;
+    font-size: 8rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 13vw, 6rem);
+  }
+
+  .section-title {
+    font-size: 2rem;
   }
 
   .project-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .terminal-card {
+    padding: 25px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .card-footer-deco {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .experience-section,
+  .skills-section {
+    padding: 60px 0;
+  }
+
+  .theme-toggle {
+    top: 15px;
+    right: 15px;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    word-wrap: break-word;
+  }
+
+  .section-title {
+    font-size: clamp(1.2rem, 8vw, 2rem);
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .marquee-item {
+    font-size: 1.5rem;
+    gap: 20px;
+  }
+
+  .btn-glitch {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  .social-link {
+    font-size: 0.8rem;
   }
 }

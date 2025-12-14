@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Lenis from '@studio-freight/lenis';
+import { Analytics } from "@vercel/analytics/react"
 import { motion } from 'framer-motion';
 import {
   Download, ArrowUpRight, Folder, Terminal,
@@ -45,6 +46,7 @@ const App = () => {
 
   return (
     <div className="app">
+      <Analytics />
       <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
 
       {/* --- HERO SECTION --- */}
