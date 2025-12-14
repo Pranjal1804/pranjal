@@ -229,7 +229,7 @@ const App = () => {
       {/* --- FOOTER --- */}
       <footer className="container" style={{ padding: '100px 0', textAlign: 'center' }}>
         <h2 className="footer-text" style={{ fontSize: '5vw', lineHeight: 1, marginBottom: '40px', fontFamily: 'Syne' }}>
-          /// SYSTEM_HALTED <span className="blinking-cursor">_</span>
+          SYSTEM_HALTED <span className="blinking-cursor">_</span>
         </h2>
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', marginBottom: '40px' }}>
           <SocialLink href="https://github.com/Pranjal1804" label="GITHUB" />
